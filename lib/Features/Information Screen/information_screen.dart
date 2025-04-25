@@ -11,16 +11,15 @@ class InformationScreen extends StatefulWidget {
 class _InformationScreenState extends State<InformationScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Knowledge",
-          style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold),
-        ),
-        centerTitle: true,
-      ),
-      body: const InformationScreenBody(),
-    ));
+    return Scaffold(
+          appBar: AppBar(
+    title: const Text(
+      "Knowledge",
+      style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold),
+    ),
+    centerTitle: true,
+          ),
+          body: const InformationScreenBody(),
+        );
   }
 }
