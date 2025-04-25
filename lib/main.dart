@@ -14,24 +14,22 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  ScreenUtilInit(
-      designSize: const Size(375, 812),
+    return  const ScreenUtilInit(
+      designSize: Size(375, 812),
       minTextAdapt: true,
+      ensureScreenSize: true,
       child: MaterialApp(
-        localizationsDelegates: const [
+        localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
-        supportedLocales: const [
+        supportedLocales: [
           Locale('ar', ''), // Arabic
         ],
-        locale: const Locale('ar', ''), 
+        locale: Locale('ar', ''), 
         debugShowCheckedModeBanner: false,
-        home: const InformationScreen(),
-       routes: {
-          '/practice': (context) => const PracticeScreen(),
-       },
+        home: InformationScreen(),
       ),
       
     );
