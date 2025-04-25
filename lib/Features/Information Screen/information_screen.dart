@@ -14,13 +14,13 @@ class _InformationScreenState extends State<InformationScreen> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Knowledge",
           style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
-      body: InformationScreenBody(),
+      body: const InformationScreenBody(),
     ));
   }
 }

@@ -15,7 +15,7 @@ final String firstdescription , seconddescription, thirddescription;
           "مراجع حديثة:",
           style: Apptextstyle.sectionStyle16,
         ),
-      SizedBox(height: 8),
+      const SizedBox(height: 8),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Text(
@@ -25,7 +25,7 @@ final String firstdescription , seconddescription, thirddescription;
 
         ),
       ),
-      SizedBox(height: 4),
+      const SizedBox(height: 4),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Text(
@@ -34,7 +34,7 @@ final String firstdescription , seconddescription, thirddescription;
 
         ),
       ),
-      SizedBox(height: 4),
+      const SizedBox(height: 4),
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Text(

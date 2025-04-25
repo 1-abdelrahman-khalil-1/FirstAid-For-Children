@@ -1,8 +1,8 @@
 import 'package:first_aid_for_children/Features/Information%20Screen/widgets/reference_section.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../Core/utils/widgets/apptextstyle.dart';
-import 'section_and_description.dart';
-
+import '../../../Core/utils/widgets/section_and_description.dart';
 class InformationScreenBody extends StatelessWidget {
   const InformationScreenBody({super.key});
 
@@ -12,36 +12,37 @@ class InformationScreenBody extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
+          spacing: 20,
           crossAxisAlignment: CrossAxisAlignment.start,
           children:  [
-            SectionAndDescription(
+            const SectionAndDescription( 
                 title: "المعرفة:",
                 description:
                     "تُعدُّ الإسعافات الأولية للأطفال مهارة حيوية يجب أن يتقنها الآباء ومقدمو الرعاية، نظرا لفضول الأطفال وحركتهم الدائمة التي قد تعرضهم للإصابات. يُسهم التدخل السريع والف ّعال في تقليل المضاعفات وحماية حياة الطفل."),
-            SectionAndDescription(
+            const SectionAndDescription(
                 title: "مفهوم الإسعافات الأولية:",
                 description:
                     "الإسعافات الأولية هي الرعاية العاجلة المقدمة لشخص مصاب أو مريض بشكل مفاجئ، بهدف الحفاظ على حياته وتقليل تفاقم الحالة حتى وصول المساعدة الطبية المتخصصة."),
-            SectionAndDescription(
+            const SectionAndDescription(
                 title: "أهداف الإسعافات الأولية:",
                 description:
                     '1. الحفاظ على حياة المصاب: من خلال التدخل السريع لمنع الوفاة.\n'
                     '2. منع تفاقم الحالة: باتخاذ إجراءات تحول دون تدهور الوضع الصحي للمصاب.\n'
                     '3. تخفيف الألم والمعاناة: بتقديم الدعم الجسدي والنفسي للمصاب.\n'
                     '4. تعزيز الشفاء: توفير الرعاية الأولية التي تساهم في تسريع عملية التعافي.'),
-          SectionAndDescription(
+          const SectionAndDescription(
             title: "أنواع الإسعافات الأولية:",
             description:
                 '1. إسعافات الإصابات الجسدية: مثل الجروح، الحروق، الكسور، والنزيف.\n'
                 '2. إسعافات الحالات الطبية الطارئة: مثل حالات الإختناق والتسمم.\n'
                 '3. إسعافات الإصابات البيئية: مثل ضربة الشمس، انخفاض حرارة الجسم، ولسعات الحشرات.',
           ),    
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'مفهوم التسمم عند الأطفال:',
               description:
                   'التسمم هو دخول مادة ضارة إلى الجسم بكمية معينة تؤدي إلى إحداث أضرار صحية. يمكن أن تكون هذه المواد طبيعية أو مصنعة، وتدخل الجسم بطرق مختلفة.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'التحديات في الإسعافات الأولية:',
               description:
                 '1. عدم توفر أدوات الإسعاف اللازمة: مما قد يعيق تقديم الرعاية المناسبة.\n'
@@ -49,11 +50,11 @@ class InformationScreenBody extends StatelessWidget {
                 '3. الخوف أو التوتر: يمكن أن يؤثر على قدرة المسعف في التعامل مع الموقف بفعالية.\n'
                 '4. وجود مخاطر بيئية: مثل الحرائق أو المواد الكيميائية، مما قد يعرض المسعف والمصاب للخطر.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'الساعة الحرجة لممارسة الإسعافات الأولية:',
               description: 'تشير "الساعة الذهبية" إلى الفترة الزمنية الحرجة بعد وقوع الإصابة، حيث يكون للتدخل السريع دور كبير في تحسين فرص النجاة وتقليل المضاعفات. خلال هذه الفترة، يمكن أن يكون للإسعافات الأولية الفعالة تأثير إيجابي كبير على حالة المصاب',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'مبادئ الإسعافات الأولية:',
               description:
                   '1. السلامة أولاً: تأكد من أن موقع الحادث آمن لك وللمصاب قبل تقديم المساعدة.\n'
@@ -62,12 +63,12 @@ class InformationScreenBody extends StatelessWidget {
                   '4. تقديم الرعاية الأساسية: ابدأ بتقديم الإسعافات الأولية المناسبة لحالة المصاب.\n'
                   '5. المراقبة المستمرة: راقب حالة المصاب باستمرار حتى وصول المساعدة المتخصصة.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'مفهوم التسمم عند الأطفال:',
               description:
                   'التسمم هو دخول مادة ضارة إلى الجسم بكمية معينة تؤدي إلى إحداث أضرار صحية. يمكن أن تكون هذه المواد طبيعية أو مصنعة، وتدخل الجسم بطرق مختلفة.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'أسباب التسمم عند الأطفال:',
               description: '1. تناول مواد سامة عن قصد أو بالخطأ.\n'
                   '2. التداخلات الدوائية غير المقصودة.\n'
@@ -76,7 +77,7 @@ class InformationScreenBody extends StatelessWidget {
                   '5. التخزين غير السليم للمواد الكيميائية أو الأدوية.\n'
                   '6. عدم مراقبة الأطفال وترك المواد الضارة في متناول أيديهم.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'طرق دخول السموم إلى الجسم:',
               description:
                   '1. عن طريق الفم: ابتلاع المواد السامة مثل الأدوية أو المواد الكيميائية.\n'
@@ -84,14 +85,14 @@ class InformationScreenBody extends StatelessWidget {
                   '3. عن طريق الامتصاص عبر الجلد: ملامسة الجلد لمواد سامة تمتص عبره.\n'
                   '4. عن طريق الحقن: دخول المواد السامة مباشرة إلى الأنسجة أو الأوعية الدموية.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'أنواع التسمم عند الأطفال:',
               description:
                   '1. تسمم غذائي: ناتج عن تناول أطعمة ملوثة بالبكتيريا أو الفيروسات.\n'
                   '2. تسمم كيميائي: ناتج عن التعرض لمواد كيميائية ضارة.\n'
                   '3. تسمم دوائي: ناتج عن تناول جرعات زائدة من الأدوية.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'أعراض التسمم عند الأطفال:',
               description: '1. غثيان وقيء.\n'
                   '2. ألم في البطن وإسهال.\n'
@@ -100,7 +101,7 @@ class InformationScreenBody extends StatelessWidget {
                   '5. تغيرات في مستوى الوعي، مثل النعاس أو فقدان الوعي.\n'
                   '6. تشنجات أو نوبات صرع.',
             ),
-            SectionAndDescription(
+            const SectionAndDescription(
               title: 'دور التمريض في حالة التسمم للأطفال:',
               description: '1. التقييم السريع لحالة الطفل:\n'
                   '   - تحديد نوع المادة السامة وكمية التعرض ووقت حدوث التسمم.\n'
@@ -118,7 +119,7 @@ class InformationScreenBody extends StatelessWidget {
                   '   - غسل المنطقة المصابة بكمية كبيرة من الماء الجاري.\n'
                   '   - إزالة الملابس الملوثة بعناية.',
             ),
-           SectionAndDescription(
+           const SectionAndDescription(
               title: 'مشاكل ومضاعفات التسمم عند الأطفال:',
               description:
                   '1. فشل في وظائف الأعضاء الحيوية مثل الكلى أو الكبد.\n'
@@ -126,7 +127,7 @@ class InformationScreenBody extends StatelessWidget {
                   '3. مشاكل تنفسية قد تتطلب دعماً تنفسياً.\n'
                   '4. في الحالات الشديدة، قد يؤدي التسمم إلى الوفاة.',
             ),
-           ReferenceSection(
+           const ReferenceSection(
               firstwriter: "مايو كلينك",
               secondwriter: "وزارة الصحة والسكان المصرية",
               thirdwriter: "المجلس الصحي المصري",
@@ -134,17 +135,12 @@ class InformationScreenBody extends StatelessWidget {
               seconddescription: "أسباب الإصابة بالتسمم وقواعد الإسعافات الأولية ",
               thirddescription: "الإسعافات الأولية لحالات التسمم",
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("الاختناق عند الأطفال",
-                        style: Apptextstyle.sectionStyle16,
-                         ),
-            ), 
-          SectionAndDescription(
+          Text("الاختناق عند الأطفال",style: Apptextstyle.sectionStyle16, ), 
+          const SectionAndDescription(
             title: 'مفهوم الاختناق عند الأطفال:',
             description: 'الاختناق هو حالة طبية طارئة تحدث عندما يتم منع تدفق الهواء إلى الرئتين، مما يؤدي إلى نقص الأكسجين في الجسم. قد يحدث بسبب انسداد مجرى الهواء جزئ ًيا أو كل ًيا، مما يعرض حياة الطفل للخطر إذا لم يتم التدخل بسرعة.',
           ), 
-          SectionAndDescription(
+          const SectionAndDescription(
             title: 'أسباب الاختناق عند الأطفال:',
             description: 
                 '1. الأجسام الغريبة: ابتلاع أو استنشاق الطعام الصلب (مثل المكسرات) أو الأجسام الصغيرة (الألعاب، العملات المعدنية.)\n'
@@ -154,13 +150,13 @@ class InformationScreenBody extends StatelessWidget {
                 '5. العدوى: مثل التهاب الحنجرة الحاد الذي يؤدي إلى تضييق مجرى الهواء.\n'
                 '6. الاختناق الناتج عن استنشاق الدخان أو الغازات السامة.',
           ),
-          SectionAndDescription(
+          const SectionAndDescription(
             title: 'أنواع الإختناق عند الأطفال:',
             description: 
                 '1. اختناق جزئي: لا يزال هناك بعض تدفق الهواء، وقد يتمكن الطفل من السعال أو إصدار أصوات.\n'
                 '2. اختناق كلي: انسداد كامل لمجرى التنفس، مما يؤدي إلى فقدان القدرة على السعال أو التنفس أو الكلام.\n',
           ),
-          SectionAndDescription(
+          const SectionAndDescription(
             title: 'أعراض الإختناق عند الأطفال:',
             description: 
                 '1. صعوبة أو توقف التنفس.\n'
@@ -169,14 +165,14 @@ class InformationScreenBody extends StatelessWidget {
                 '4. فقدان الوعي في الحالات الشديدة.',
           ),
 
-          SectionAndDescription(
+          const SectionAndDescription(
             title: 'مضاعفات الإختناق عند الأطفال:',
             description: 
                 '1. تلف الدماغ بسبب نقص الأكسجين إذا استمر الاختناق لأكثر من 4-6 دقائق.\n'
                 '2. توقف القلب في الحالات الشديدة.\n'
                 '3. الإلتهاب الرئوي',
           ),
-          ReferenceSection(
+          const ReferenceSection(
             firstwriter: "Hiwa et al., 2024",
             secondwriter: "American Heart Association (AHA) Guidelines, 2023",
             thirdwriter: "Pediatric Nursing Handbook, 2023",
@@ -184,7 +180,29 @@ class InformationScreenBody extends StatelessWidget {
             seconddescription: "دليل الإنعاش القلبي الرئوي والإسعافات الأولية للأطفال",
             thirddescription: "مرجع شامل حول التمريض في طب الأطفال",
           ),
-          ],
+          SizedBox(height: 10.h,),
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: FloatingActionButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/practice');
+              },
+              backgroundColor: Theme.of(context).primaryColor,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 5,
+                children: [
+                  const Icon(
+                    Icons.arrow_forward,
+                    color: Colors.white,
+                  ),
+                  Text("Practice",
+                      style: TextStyle(fontSize: 10.sp , color: Colors.white)),
+                ],
+              ),
+            ),
+          )
+           ],
         ),
       ),
     );

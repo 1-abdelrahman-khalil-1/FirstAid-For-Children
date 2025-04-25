@@ -1,3 +1,4 @@
+import 'package:first_aid_for_children/Features/Practice%20Screen/practice_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
+    return  ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
@@ -27,8 +28,12 @@ class MainApp extends StatelessWidget {
         ],
         locale: const Locale('ar', ''), 
         debugShowCheckedModeBanner: false,
-        home: InformationScreen(),
+        home: const InformationScreen(),
+       routes: {
+          '/practice': (context) => const PracticeScreen(),
+       },
       ),
+      
     );
   }
 }

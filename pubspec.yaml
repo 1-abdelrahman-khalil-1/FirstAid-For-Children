@@ -20,3 +20,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - images/
+flutter_assets:
+  assets_path: images/
+  output_path: lib/Core/utils
+  filename: appimages.dart
+  field_prefix: resource
+  ignore_comments: true
+  classname: AppImages    

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../Core/utils/widgets/apptextstyle.dart';
+import 'apptextstyle.dart';
 
 class SectionAndDescription extends StatelessWidget {
   final String title;
