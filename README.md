@@ -7,8 +7,6 @@ FirstAid-For-Children is a Flutter-based mobile application designed to provide 
 - **Step-by-Step Guides**: Easy-to-follow first aid instructions for common childhood injuries and emergencies, such as cuts, burns, choking, and allergic reactions.
 - **Child-Friendly Design**: Intuitive and engaging UI tailored for quick access during stressful situations.
 - **Offline Access**: Key first aid information available without an internet connection.
-- **Multilingual Support**: Instructions available in multiple languages to cater to a diverse user base.
-- **Emergency Contacts**: Quick access to local emergency numbers and the ability to save personal emergency contacts.
 
 -------
 <img src ="https://github.com/user-attachments/assets/1cdb5a87-f223-4713-81b5-8480dbfb6fba" height = "500">
